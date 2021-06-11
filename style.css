@@ -1,6 +1,6 @@
 :root {
-  --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
+  --bright-orange: hsl(31, 77%, 52%);
   --very-dark-cyan: hsl(179, 100%, 13%);
 }
 
@@ -16,29 +16,29 @@ button {
 }
 
 h3 {
-  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-size: 30px;
+  font-family: "Big Shoulders Display", sans-serif;
 }
 
 p {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 .btn {
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 0.7em 1.2em;
   background-color: #fff;
   border: 2px solid #fff;
-  border-radius: 30px;
-  padding: 10px 20px;
-  cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 
 .bright-orange {
-  background-color: var(--bright-orange);
   color: #fff;
   border-radius: 10px 10px 0 0;
+  background-color: var(--bright-orange);
 }
 
 .bright-orange .btn {
@@ -46,8 +46,8 @@ p {
 }
 
 .dark-cyan {
-  background-color: var(--dark-cyan);
   color: #fff;
+  background-color: var(--dark-cyan);
 }
 
 .dark-cyan .btn {
@@ -55,9 +55,9 @@ p {
 }
 
 .very-dark-cyan {
-  background-color: var(--very-dark-cyan);
   color: #fff;
   border-radius: 0 0 10px 10px;
+  background-color: var(--very-dark-cyan);
 }
 
 .very-dark-cyan .btn {
@@ -65,16 +65,16 @@ p {
 }
 
 .btn:hover {
-  background-color: transparent;
   color: #fff;
+  background-color: transparent;
 }
 
 .container {
-  padding: 20px;
+  padding: 1.2rem;
 }
 
 .card {
-  padding: 30px;
+  padding: 2rem;
 }
 
 .card img {
@@ -100,12 +100,12 @@ p {
 
 @media (min-width: 992px) {
   .container {
+    margin: auto;
     display: flex;
+    max-width: 900px;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    max-width: 900px;
-    margin: auto;
   }
 
   .bright-orange {
